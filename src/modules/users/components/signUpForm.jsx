@@ -11,6 +11,7 @@ function SignUpForm(props) {
     <FormLayout onSubmit={handleSubmit}>
       <FormField
         title="Nombre"
+        name="name"
         type="text"
         placeholder="Nombre"
         value={form.name}
@@ -18,6 +19,7 @@ function SignUpForm(props) {
       />
       <FormField
         title="Apellido"
+        name="firstName"
         type="text"
         placeholder="Apellido"
         value={form.firstName}
@@ -25,6 +27,7 @@ function SignUpForm(props) {
       />
       <FormField
         title="Correo electrónico"
+        name="email"
         type="email"
         placeholder="Correo electrónico"
         value={form.email}
@@ -32,6 +35,7 @@ function SignUpForm(props) {
       />
       <FormField
         title="Contraseña"
+        name="password"
         type="text"
         placeholder="Contraseña"
         value={form.password}

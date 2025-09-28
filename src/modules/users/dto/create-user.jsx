@@ -1,3 +1,3 @@
-export function createUserDTO({ name, firstName, email, password }) {
-  return { name, firstName, email, password };
+export function createUserDTO({ Name, FirstName, Email, Password }) {
+  return {Name, FirstName, Email, Password };
 }

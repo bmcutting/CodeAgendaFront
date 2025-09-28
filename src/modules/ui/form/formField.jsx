@@ -4,6 +4,7 @@ function FormField({
   placeholder,
   value,
   handleChange,
+  name,
 }) {
   return (
     <div className="flex flex-col gap-1 mt-4 w-fit">
@@ -13,6 +14,7 @@ function FormField({
       <input
         className="bg-input-bg border-3 border-input-border hover:border-accent-primary-hover 
         rounded-xl px-2 py-2 w-fit lg:w-[300px] text-sm shadow-xl focus:border-input-focus"
+        name={name}
         type={type}
         placeholder={placeholder}
         value={value}

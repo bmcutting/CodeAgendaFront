@@ -28,10 +28,10 @@ export default function useSignUp() {
     let dto;
     try {
       dto = createUserDTO({
-        name: form.name,
-        firstName: form.firstName,
-        email: form.email,
-        password: form.password,
+        Name: form.name,
+        FirstName: form.firstName,
+        Email: form.email,
+        Password: form.password,
       });
     } catch (err) {
       setError(err.message);
