@@ -19,13 +19,14 @@ export default function Header() {
       </div>
       <div className="text-2xl flex gap-4 justify-between mx-5 items-center ">
         <button>
-          <BiSearch />
-        </button>
-        <button>
           <BiBell />
         </button>
+        <button>
+          <BiSearch />
+        </button>
         <input
-          className="max-[600px]:hidden w-1/2"
+          className="max-[600px]:hidden w-1/2 border-3 border-border-strong rounded-xl p-1 text-xl
+          focus:bg-form-bg focus:text-text-body"
           placeholder="Buscar"
         ></input>
       </div>
