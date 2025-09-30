@@ -1,14 +1,12 @@
-import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function useSidebar() {
-  const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
 
-  function handleClick() {
-    setOpen(!open);
-  }
-
-  return {
-    open,
-    handleClick,
+  const handleClick = (path) => {
+    console.log(path);
+    navigate(path);
   };
+
+  return {handleClick};
 }
