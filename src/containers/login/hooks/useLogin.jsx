@@ -1,12 +1,10 @@
 import { useState } from "react";
-import { createUserDTO } from "../../../modules/users/dto/create-user";
 import { useNavigate } from "react-router-dom";
-import { createUser } from "../../../modules/users/services/create-user";
+import { loginUserDTO } from "../../../modules/users/dto/login-user";
+import { loginUser } from "../../../modules/users/services/login-user";
 
-export default function useSignUp() {
-  const [form, setForm] = useState({
-    name: "",
-    firstName: "",
+export default function useLogin(){
+ const [form, setForm] = useState({
     email: "",
     userPassword: "",
   });
@@ -17,7 +15,7 @@ export default function useSignUp() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!form.name || !form.firstName || !form.email || !form.userPassword) {
+    if (!form.email || !form.userPassword) {
       setError("Por favor complete todos los campos");
       return;
     }
@@ -27,9 +25,7 @@ export default function useSignUp() {
 
     let dto;
     try {
-      dto = createUserDTO({
-        name: form.name,
-        firstName: form.firstName,
+      dto = loginUserDTO({
         email: form.email,
         password: form.userPassword,
       });
@@ -39,15 +35,15 @@ export default function useSignUp() {
       return;
     }
 
-    createUser(dto)
+    loginUser(dto)
       .then((user) => {
+        console.log(user.value)
         if (user) {
           localStorage.setItem(
             "user",
             JSON.stringify({
-              name: user.name,
-              firstName: user.firstName,
-              email: user.email,
+              name: user.value.name,
+              email: user.value.email,
             })
           );
           navigate("/projects");
@@ -73,3 +69,4 @@ export default function useSignUp() {
     loading,
   };
 }
+

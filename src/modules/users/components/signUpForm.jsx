@@ -35,10 +35,10 @@ function SignUpForm(props) {
       />
       <FormField
         title="Contraseña"
-        name="password"
-        type="text"
+        name="userPassword"
+        type="password"
         placeholder="Contraseña"
-        value={form.password}
+        value={form.userPassword}
         handleChange={handleChange}
       />
       <AuthButton text="Registrarse" loading={loading} />

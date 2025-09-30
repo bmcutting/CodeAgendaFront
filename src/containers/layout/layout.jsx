@@ -8,7 +8,7 @@ export default function Layout() {
       <Header />
       <div className="flex flex-1">
         <Sidebar />
-        <main className="flex-1 p-4 bg-gray-50 overflow-auto">
+        <main className="flex-1 bg-background-surface">
           <Outlet />
         </main>
       </div>

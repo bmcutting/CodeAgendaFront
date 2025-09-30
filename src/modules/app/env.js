@@ -1,1 +1,1 @@
-export const API_ROUTE = "https://localhost:5062"
+export const API_ROUTE = "https://localhost:5062/api"

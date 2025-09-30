@@ -1,6 +1,6 @@
 function AuthButton({ text, loading }) {
   return (
-    <button className="rounded-xl bg-accent-primary hover:bg-accent-primary-hover border-2 border-border-strong p-2 w-1/2 mt-4">
+    <button className="rounded-xl bg-button-bg hover:bg-button-hover border-2 border-border-strong p-2 w-1/2 mt-4">
       {loading ? (
         <>
           <svg
@@ -26,7 +26,7 @@ function AuthButton({ text, loading }) {
           Cargando...
         </>
       ) : (
-        <p className="text-sm text-btn-text text-center font-mono font-thin">
+        <p className="text-sm text-button-text text-center font-mono font-thin">
           {text}
         </p>
       )}

@@ -1,16 +1,29 @@
+import SidebarButton from "../button/sideBarButton";
+import { BiLogOut } from "react-icons/bi";
+
 export default function Sidebar() {
   return (
-    <div className="bg-navy w-1/6 max-sm:hidden">
-      <div className="flex flex-col gap-4 text-white px-2 h-1/2">
-        <button className="button">Projects</button>
-        <button className="button">Assignments</button>
-        <button className="button">Notes</button>
-        <button className="button">Profile</button>
-        <button className="button">Configuration</button>
+    <aside
+      className=" text-btn-text bg-background-sidebar border-r-2 border-r-divider lg:w-1/6
+    h-full  flex flex-col justify-between shadow-md"
+    >
+      <nav className="flex flex-col gap-3 px-4 py-6 overflow-y-auto">
+        <SidebarButton label="Proyectos" />
+        <SidebarButton label="Tareas" />
+        <SidebarButton label="Notas" />
+        <SidebarButton label="Perfil" />
+        <SidebarButton label="Configuración" />
+      </nav>
+      <div className="px-4 py-6">
+        <button
+          className="flex items-center gap-2 text-red-400 hover:text-red-600 transition-colors duration-200
+          text-xl"
+          aria-label="Log out"
+        >
+          <BiLogOut className="text-center text-2xl" />
+          <span>Log out</span>
+        </button>
       </div>
-      <div className="h-1/2 flex items-end justify-center px-5">
-        <button className="button-out ">Log out</button>
-      </div>
-    </div>
+    </aside>
   );
 }

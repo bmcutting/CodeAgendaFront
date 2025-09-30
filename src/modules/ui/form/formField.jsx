@@ -12,7 +12,7 @@ function FormField({
         {title}
       </label>
       <input
-        className="bg-input-bg border-3 border-input-border hover:border-accent-primary-hover 
+        className="bg-background-main border-3 border-border-strong hover:border-accent-primary-hover 
         rounded-xl px-2 py-2 w-fit lg:w-[300px] text-sm shadow-xl focus:border-input-focus"
         name={name}
         type={type}

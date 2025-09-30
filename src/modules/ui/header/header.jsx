@@ -1,25 +1,29 @@
 import { BiBell, BiSearch } from "react-icons/bi";
-
+import { MdMenu } from "react-icons/md";
+import Sidebar from "../sidebar/sidebar";
 
 export default function Header() {
   return (
-    <div className="bg-agenda gap-4 border-b-2 border-b-graphite h-1/10 p-4 grid grid-cols-3">
-      <div className="flex gap-3 items-center text-lg text-paper text-center font-mono font-thin">
-        <img src="vite.svg" alt="Ícono de usario" />
-        <span>Usuario</span>
+    <div
+      className="bg-background-header text-text-heading border-b-divider gap-2 
+      border-b-2 h-1/10 grid grid-cols-3 text-xl"
+    >
+      <div className="flex items-center justify-start ml-5 gap-2">
+        <button className="sm:hidden">
+          <MdMenu className="text-2xl" />
+        </button>
       </div>
-      <div>
-        <p className="text-3xl text-paper text-center font-mono font-thin">
-          CodeAgenda
-        </p>
+      <div className="flex items-center justify-center">
+        <p className="">CodeAgenda</p>
       </div>
-      <div className="flex justify-end p-2 gap-1">
-        <button><BiBell className="text-3xl text-paper cursor-pointer"/></button>
-        <button><BiSearch className="text-3xl text-paper cursor-pointer"/></button>
-        <input
-          className="bg-blue-300 border-2 border-blue-900 w-1/2 text-paper"
-          placeholder="Buscar"
-        ></input>
+      <div className="text-2xl flex gap-4 justify-between mx-5 items-center ">
+        <button>
+          <BiSearch />
+        </button>
+        <button>
+          <BiBell />
+        </button>
+        <input className="max-[600px]:hidden w-1/2" placeholder="Buscar"></input>
       </div>
     </div>
   );

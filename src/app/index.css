@@ -1,48 +1,50 @@
 @import "tailwindcss";
 
+
 @theme {
-  /* 🎯 Base */
-  --color-bg-main: #FAFAFA;               /* Fondo general tipo papel */
-  --color-bg-surface: #FFFFFF;            /* Fondo de tarjetas y formularios */
-  --color-text-primary: #2E2E2E;          /* Texto principal */
-  --color-text-heading: #37474F;          /* Títulos y encabezados */
-  --color-text-muted: #757575;            /* Texto secundario o desactivado */
-  --color-border-default: #E0E0E0;        /* Bordes suaves */
-  --color-border-strong: #B0BEC5;         /* Bordes más marcados */
+  /* 🌿 Backgrounds */
+  --color-background-main: #F5F3EF;              /* Main background, cream paper-like */
+  --color-background-surface: #FFFFFF;           /* Surface background for cards, forms, containers */
+  --color-background-sidebar: #EDEAE5;           /* Sidebar navigation background */
+  --color-background-header: #F0EEE9;            /* Top header background */
 
-  /* 🟦 Accentos */
-  --color-accent-primary: #5C6BC0;        /* Azul agenda elegante (botones, enlaces) */
-  --color-accent-primary-hover: #3F51B5;  /* Hover para botones primarios */
-  --color-accent-secondary: #FFB74D;      /* Botones secundarios o etiquetas cálidas */
-  --color-accent-secondary-hover: #FFA726;
+  /* 🖋️ Text */
+  --color-text-body: #3E3E3E;                    /* Primary content text */
+  --color-text-heading: #2C2C2C;                 /* Headings and titles */
+  --color-text-muted: #7A7A7A;                   /* Secondary or disabled text */
+  --color-text-link: #5F5C52;                    /* Subtle links or actions */
 
-  /* ✅ Estados */
-  --color-success-bg: #E8F5E9;
-  --color-success-text: #388E3C;
-  --color-warning-bg: #FFF3E0;
-  --color-warning-text: #F57C00;
-  --color-error-bg: #FDECEA;
-  --color-error-text: #D32F2F;
-  --color-info-bg: #E3F2FD;
-  --color-info-text: #1976D2;
+  /* 📐 Borders and Dividers */
+  --color-border-light: #D6D3CE;                    /* Light borders for inputs and cards */
+  --color-border-strong: #A8A6A1;/* Stronger borders for sections */
+  --color-divider: #E0DED9; /* Dividing lines between blocks */
 
-  /* ✍️ Formularios */
-  --color-input-bg: #FFFFFF;
-  --color-input-border: #CFD8DC;
-  --color-input-focus: #5C6BC0;
-  --color-input-placeholder: #B0BEC5;
+  /* 🖱️ Buttons */
+  --color-button-bg: #B8AA9E;/* Primary button background (soft brown) */
+  --color-button-text: #FFFFFF; /* Button text color */
+  --color-button-hover: #A39284;/* Hover state for primary buttons */
+  --color-button-secondary-bg: #DCD6CF;/* Secondary or alternative button background */
+  --color-button-secondary-hover: #C8C2BA;
+  --color-button-disabled-bg: #EAE8E4;
+  --color-button-disabled-text: #A8A6A1;
 
-  /* 🖱️ Botones */
-  --color-btn-bg: var(--accent-primary);
-  --color-btn-text: #FFFFFF;
-  --color-btn-hover: var(--accent-primary-hover);
-  --color-btn-disabled-bg: #E0E0E0;
-  --color-btn-disabled-text: #9E9E9E;
+  /* ✍️ Forms */
+  --color-form-bg: #FFFFFF;
+  --color-form-border: #D6D3CE;
+  --color-form-focus: #B8AA9E;
+  --color-form-placeholder: #A8A6A1;
 
-  /* ✨ Resaltados */
-  --color-highlight-bg: #FFF8E1;
-  --color-highlight-text: #795548;
+  /* ✅ Status Colors */
+  --color-status-success-bg: #F1F8F4;
+  --color-status-success-text: #3C6E47;
+  --color-status-error-bg: #FDECEA;
+  --color-status-error-text: #A94442;
+  --color-status-warning-bg: #FFF8E1;
+  --color-status-warning-text: #8D6E63;
+  --color-status-info-bg: #EEF3F7;
+  --color-status-info-text: #546E7A;
 
-  /* 🧱 Separadores */
-  --color-divider: #ECEFF1;
+  /* ✨ Highlights */
+  --color-highlight-bg: #FDF6E3;
+  --color-highlight-text: #6D4C41;
 }
