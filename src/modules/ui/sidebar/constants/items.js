@@ -1,5 +1,5 @@
 export const items = [
-  { name: "Proyectos", path: "/dashboard"},
+  { name: "Proyectos", path: "/projects"},
   { name: "Tareas", path: "/assignments"},
   { name: "Notas", path: "/notes"},
   { name: "Perfil", path: "/profile"},

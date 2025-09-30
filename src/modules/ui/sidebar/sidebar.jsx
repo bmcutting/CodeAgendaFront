@@ -24,7 +24,7 @@ export default function Sidebar() {
           />
         ))}
       </nav>
-      <div className="px-4 py-6">
+      <div className="px-4 py-6 flex items-center justify-center">
         <button
           className="flex items-center gap-2 text-red-400 hover:text-red-600 transition-colors duration-200
           text-xl"
