@@ -4,6 +4,7 @@ import Layout from "../containers/Layout/layout";
 import Projects from "../containers/projects/projects";
 import SignUp from "../containers/signUp/signUp";
 import Profile from "../containers/profile/profile";
+import { SidebarProvider } from "../modules/ui/sidebar/contexts/sidebarContext";
 
 function App() {
   return (
