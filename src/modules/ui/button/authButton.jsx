@@ -26,7 +26,7 @@ function AuthButton({ text, loading }) {
           Cargando...
         </>
       ) : (
-        <p className="text-sm text-button-text text-center font-mono font-thin">
+        <p className="text-sm md:text-xl text-button-text text-center font-mono font-thin">
           {text}
         </p>
       )}

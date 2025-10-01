@@ -1,6 +1,7 @@
 function SecondaryButton({ text, link }) {
   return (
-    <div className="m-2 text-text-link inline-block font-semibold hover:text-shadow-button-hover">
+    <div className="m-2 text-text-link inline-block font-semibold hover:text-shadow-button-hover
+    text-sm md:text-xl">
       <a href={link}>{text}</a>
     </div>
   );
